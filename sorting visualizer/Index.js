@@ -1,6 +1,7 @@
 let array_size=50;
 let bar_size=[];
 let bar=[];
+let desc=document.getElementById("desc item");
 let genarray= document.getElementById("newarray");
 genarray.addEventListener("click",generateArray);
 

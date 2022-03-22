@@ -1,4 +1,11 @@
-
+ let Case=["O(n)","O(n^2)","O(n^4)"];
+ Case=[...Case];
+ let bubevent=document.getElementById("bub");
+ bubevent.addEventListener("click",bubble_sort)
+ bubevent.addEventListener("click",()=>{
+ document.getElementById("desc item").innerHTML('Best case\n worst Case');
+ 
+ });
 function bubble_sort()
 {
     change_delay=0;

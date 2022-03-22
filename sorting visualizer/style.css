@@ -66,3 +66,7 @@ input{
   bottom: 0px;
   transition: 0.2s all ease;
 }
+
+.description ul{
+ color: white;
+}
