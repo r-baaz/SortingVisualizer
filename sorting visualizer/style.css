@@ -2,10 +2,11 @@
   box-sizing: border-box;
   margin: 0px;
   padding:0px;
+  color:white;
 }
 
 body{
-    background-color:#26262e;
+    background-color:#03061B;
 }
 
 #container{
@@ -14,6 +15,7 @@ body{
   justify-content: center;
   padding-top: 15px;
   width: 700px;;
+  min-height: 400px;
   margin:auto;
 
 }
@@ -65,4 +67,29 @@ input{
   margin: 2px;
   bottom: 0px;
   transition: 0.2s all ease;
+}
+
+.description{
+  display: inline-block;
+  margin:20px;
+  background: linear-gradient(0deg,#101639,#080D32 40%);
+  border-radius:15px;
+  box-shadow: 0px 0px 1px 1px #161616;
+  padding:8px;
+  height:210px;
+}
+.Complexity{
+  margin:10px auto;
+  font-size: 15px;
+  border-collapse: collapse;
+  border:2px solid #989BBE;
+  width:250px;
+  height:150px;
+}
+.Complexity td{
+ padding:5px;
+}
+
+section{
+  display:flex;
 }

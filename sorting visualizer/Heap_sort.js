@@ -1,5 +1,8 @@
+let Hsort= document.getElementById("HeapSort");
+Hsort.addEventListener("click", Heap);
 function Heap()
 {
+    showComplexity("O(n × log n)","O(n × log n)","O(n × log n)");
     change_delay=0;
 
     heap_sort();

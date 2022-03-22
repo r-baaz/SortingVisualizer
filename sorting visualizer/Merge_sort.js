@@ -1,5 +1,9 @@
+let Msort= document.getElementById("MergeSort");
+Msort.addEventListener("click", Merge);
+
 function Merge()
 {
+    showComplexity("O(n × log n)","O(n × log n)","O(n × log n)");
     change_delay=0;
 
     merge_partition(0,array_size-1);

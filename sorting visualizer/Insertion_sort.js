@@ -1,5 +1,8 @@
+let Isort= document.getElementById("InsertionSort");
+Isort.addEventListener("click", Insertion);
 function Insertion()
 {
+    showComplexity("O(n)","O(n²)","O(n²)");
     change_delay=0;
 
     for(var j=0;j<array_size;j++)

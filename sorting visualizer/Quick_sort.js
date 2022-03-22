@@ -1,5 +1,9 @@
+let Qsort= document.getElementById("QuickSort");
+Qsort.addEventListener("click", quick_sort);
+
 function quick_sort()
 {
+    showComplexity("O(n × log n)","O(n × log n)","O(n²)")
     change_delay=0;
 
     sort(0,array_size-1);

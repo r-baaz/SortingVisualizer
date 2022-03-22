@@ -1,5 +1,9 @@
+let Ssort= document.getElementById("SelectionSort");
+Ssort.addEventListener("click", selection_sort);
+
 function selection_sort()
 {
+    showComplexity("O(n²)","O(n²)","O(n²)");
     change_delay=0;
 
     for(var i=0;i<array_size-1;i++)

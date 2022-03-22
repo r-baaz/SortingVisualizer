@@ -1,6 +1,8 @@
-
+let Bsort= document.getElementById("BubbleSort");
+Bsort.addEventListener("click", bubble_sort);
 function bubble_sort()
 {
+  showComplexity("O(n)","O(n²)","O(n²)");
     change_delay=0;
 
     for(var i=0;i<array_size-1;i++)

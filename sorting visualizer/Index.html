@@ -21,12 +21,12 @@
      <button class="btn" onclick="Merge()" type="text">Merge Sort</button>
      <button class="btn" onclick="Heap()" type="text">Heap Sort</button> -->
       <li class="btn" id="newarray" onclick="">New Array</li>
-      <li class="btn" onclick="bubble_sort()">Bubble sort</li>
-      <li class="btn" onclick="selection_sort()">Selection Sort</li>
-      <li class="btn" onclick="Insertion()">Insertion Sort</li>
-      <li class="btn" onclick="quick_sort()">Quick Sort</li>
-      <li class="btn" onclick="Merge()">Merge Sort</li>
-      <li class="btn" onclick="Heap()">Heap Sort</li>
+      <li class="btn" id="BubbleSort">Bubble sort</li>
+      <li class="btn" id="SelectionSort">Selection Sort</li>
+      <li class="btn" id="InsertionSort">Insertion Sort</li>
+      <li class="btn" id="QuickSort">Quick Sort</li>
+      <li class="btn" id="MergeSort">Merge Sort</li>
+      <li class="btn" id="HeapSort">Heap Sort</li>
       <label for="input" class=label>Size</label>
       <input class="noa" id="numberofarray" value="50" oninput="numberOfArray()" type="text" name="no of arrays" placeholder="No of Arrays" /> 
       <label for="Range" class=label>Speed</label>
@@ -37,15 +37,28 @@
   <!-- </div> -->
 <div id="container"> 
 
- 
 </div>
-<div class=" description">
- <h2></h2>
- </h2>
-<p>
-  
-</p>
+
+<section>
+<div class="description" id="desc">
+ <h3>Complexity</h3>
+ <table class="Complexity">
+   <tr>
+     <td>Best Case</td>
+     <td id="Best Case"></td>
+   </tr>
+   <tr>
+     <td>Average Case</td>
+     <td id="Average Case"></td>
+   </tr>
+   <tr>
+     <td>Worst Case</td>
+     <td id="Worst Case"></td>
+   </tr>
+ </table>
 </div>
+
+</section>
 
 <script src="Index.js" type="text/javascript" charset="utf-8"></script>
 <script src="visual.js" type="text/javascript" charset="utf-8"></script>
