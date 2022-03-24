@@ -20,9 +20,6 @@ function bubble_sort()
                 bar_size[j]=bar_size[j+1];
                 bar_size[j+1]=temp;
                 
-                let temp2=bar[j].innerText;
-                bar[j].innerText=bar[j+1].innerText;
-                bar[j+1].innerText=temp2;
                
               
 

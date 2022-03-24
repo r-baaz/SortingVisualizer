@@ -27,9 +27,11 @@ function customArray(){
   let inp=document.querySelectorAll(".arr");
    while(cont.hasChildNodes()){
     cont.removeChild(cont.firstChild);
+ 
   }
+  bar_size=[];
   for( var i=0;i<10;i++){
-    bar_size[i]=inp[i].value;
+    bar_size[i]=parseFloat(inp[i].value);
     bar[i]=document.createElement("div");
     bar[i].classList.add("block");
     bar[i].innerText=inp[i].value;

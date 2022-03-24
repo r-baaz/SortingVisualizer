@@ -22,7 +22,8 @@ function speedOfVisual()
 function Update(cont,height,color)
 {
     window.setTimeout(function(){
+
         cont.style="height:" + height + "px; background-color:" + color + ";";
-        cont
+        cont.innerText=height;
     },change_delay+=delay_time);
 }

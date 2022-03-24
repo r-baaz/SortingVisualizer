@@ -11,14 +11,13 @@ body{
 }
 .visual-sec{
   display:block;
-  height: 20rem;
 }
 #container{
   /* background-color: white; */
-  display: flex;
+  display:flex;
   justify-content: center;
-  max-width: 60%;
-  
+  width:35rem;
+  height: 20rem;
   margin:1rem auto;
 
 }
@@ -65,7 +64,9 @@ input{
 }
 
 .bar{
-  width:5%;
+  text-align: center;
+
+  width:28px;
   background-color: turquoise;
   margin: 2px;
   bottom: 0px;
@@ -73,16 +74,19 @@ input{
 }
 
 .block{
-  display:inline-block;
+ 
   text-align: center;
   background-color: turquoise;
   margin:4px;
-  width:6rem;
-  max-width:6rem;
-  height:3rem;
+  min-width:5rem;
+  max-width:5rem;
+  min-height: 3rem;
   max-height: 3rem;
   padding: 1rem 0 1rem 0;
   color:white;
+  transition: color 10s ease;
+  transition-delay: 1s;
+
 }
 
 .description{
