@@ -23,5 +23,6 @@ function Update(cont,height,color)
 {
     window.setTimeout(function(){
         cont.style="height:" + height + "px; background-color:" + color + ";";
+        cont
     },change_delay+=delay_time);
 }
