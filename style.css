@@ -22,17 +22,22 @@ body{
 
 }
 .Mynav{
+    display: flex;
+    align-items: center;
     background-color: #1c4866;
     border-radius: 0.5rem;
 }
 
 .Mynav ul{
   display:flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   /* flex-direction: right; */
 }
 
+.controls{
+  justify-content: right;
+}
 li{
   list-style: none;
   border-radius:10px;
