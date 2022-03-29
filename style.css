@@ -37,13 +37,16 @@ body{
 
 .Mynav ul li{
   display:inline;
+
 }
 
 .controls{
-  display:flex;
-  justify-content: flex-end;
+  display: flex;
+  float:right;
   align-items: center;
 }
+
+
 li{
   list-style: none;
   border-radius:10px;
