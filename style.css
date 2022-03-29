@@ -42,7 +42,7 @@ body{
 
 .controls{
   display: flex;
-  float:right;
+  justify-content:right;
   align-items: center;
 }
 
