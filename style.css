@@ -114,11 +114,47 @@ input{
  padding:5px;
 }
 
-section{
+.bcontrol{
   display:flex;
 }
 
 .customarray{
   display:block;
-  color: white;
+  margin:0 0 0 auto;
+  overflow:hidden;
+  background-color:#E69517;
+  padding:2rem;
+}
+.customarray h3{
+  margin-left:1rem;
+}
+
+.customarray-btn{
+  margin-top: 1rem;
+  margin-left: 1rem;
+  color:black;
+  background-color:#4FA99A;
+  padding:5px;
+  border: 1px solid black;
+  border-radius: 8px;
+  border-color: #CF2323;
+}
+
+#custominput{
+  position: relative;
+  top:0px;
+}
+
+
+.arr{
+  width:4rem;
+}
+.openbtn{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  background-color: #E69517;
+  width:30px;
+  margin-left:3px;
 }
