@@ -22,27 +22,21 @@ body{
 
 }
 .Mynav{
-    display: flex;
+   display: flex;
+   justify-content: space-between;
     align-items: center;
     background-color: #1c4866;
     border-radius: 0.5rem;
 }
 
 .Mynav ul{
-  float:left;
-  justify-content: left;
+  display:flex;
   align-items: center;
   /* flex-direction: right; */
 }
 
-.Mynav ul li{
-  display:inline;
-
-}
-
 .controls{
-  display: flex;
-  flex-direction: right;
+ display:flex;
   align-items: center;
 }
 
