@@ -21,7 +21,7 @@ function randomArray(){
     bar[i].style="height:"+bar_size[i]+"px;";
     cont.appendChild(bar[i]);
   }
-  desc.style="visibility:hidden";
+  desc.style="opacity:0";
 }
 
 function customArray(){
@@ -39,6 +39,8 @@ function customArray(){
     bar[i].innerText=inp[i].value;
     cont.appendChild(bar[i]);
   }
+    desc.style="opacity:0;";
+    
 }
 
 function numberOfArray(){
@@ -47,7 +49,7 @@ function numberOfArray(){
 }
 
 function showComplexity(val1,val2,val3){
-  desc.style="visibility:visible";
+  desc.style="opacity:1;";
   let td1= document.getElementById("Best Case");
   let td2= document.getElementById("Average Case");
   let td3= document.getElementById("Worst Case");
@@ -60,7 +62,7 @@ let openbtn=document.getElementById("openbtn");
 let custompanel=document.getElementById("ca");
 openbtn.addEventListener("click", ()=>{
   
-  ca.style="width:515px; ";
+  ca.style="width:100%; ";
   openbtn.style="visibility:hidden";
   closebtn.style="visibility:visible;";
   

@@ -1,3 +1,7 @@
+:root{
+  --ca_clr:rgba(190, 62, 62, 1);
+  --comp_clr:rgba(31, 40, 94, 1);
+}
 *{
   box-sizing: border-box;
   margin: 0px;
@@ -97,58 +101,76 @@ input{
 }
 
 .description{
-  margin:20px;
-  background:linear-gradient(0deg,#101639,#1F2343 40%);
-  border-radius:15px;
+
+  background-color:var(--comp_clr);
+  border-radius:0 15px 15px 0;
   box-shadow: 0px 0px 1px 1px #161616;
-  padding:2em 1em;
+  opacity:0;
+  max-width:25%;
+  transition:opacity 0.25s ease-in-out;
 }
 
-.Complexity{
-  margin:10px auto;
-  font-size: 15px;
+.complexity{
+  margin:20px;
   border-collapse: collapse;
   border:2px solid #989BBE;
-  width:12rem;
+  overflow:hidden;
 }
 
-.Complexity td{
+.description h3{
+  margin:10px 0 0 20px;
+  
+}
+.complexity td{
  padding:5px;
 }
 
+.description div{
+  padding:10px;
+}
+
 .bcontrol{
-  display:flex;
+  display: flex;
 }
 
 .customarray{
- display:inline-block;
+ display:flex;
+ justify-content: space-evenly;
+ align-items: center;
   margin:0 0 0 auto;
   border-radius: 15px 0 0 15px;
-  overflow:hidden;
   width:0%;
-  background-color:#E69517;
-  transition: width .25s ease-out;
-  transition-delay:padding 1s;
+  overflow: hidden;
+  max-width: 70%;
+  background-color:var(--ca_clr);
+  transition: width .5s ease-in-out;
 }
 
 
 .customarray h3{
   overflow:hidden;
-  margin:2rem 0 0 2rem;
+  margin-left:16px;
+  transition:width .2s none;
 }
 
 .customarray-btn{
-  margin-left: 2rem;
   color:black;
   background-color:#4FA99A;
-  padding:5px;
-  border: 1px solid black;
+  padding:10px;
+  margin-top:20px;
+  border: 2px solid black;
   border-radius: 8px;
-  border-color: #CF2323;
+  min-width:fit-content;
+  overflow:hidden;
+}
+
+.customarray-btn:hover{
+  background-color:#8C61B8;
+  box-shadow: 0 0 25px #5F67BF;
 }
 
 #custominput{
-  margin:0 0 0 2rem;
+  
 }
 
 .arr{
@@ -159,7 +181,7 @@ input{
   justify-content: center;
   align-items: center;
   font-size: 32px;
-  background-color: #E69517;
+  background-color: var(--ca_clr);
   width:40px;
   margin-left:3px;
 }

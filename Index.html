@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>sv</title>
+    <title>Sorting Visualizer</title>
     <link rel="stylesheet" href="style.css" type="text/css" media="all" />
 </head>
   
@@ -30,7 +30,7 @@
     </ul>
     <div class="controls">
       <label for="input" class=label>Size</label>
-      <input class="noa" id="numberofarray" value="15" oninput="numberOfArray()" type="text" name="no of arrays" placeholder="No of Arrays" /> 
+      <input class="noa" id="numberofarray" type="Range" value="15" min="10" max="100" step=1 oninput="numberOfArray()" name="no of arrays" placeholder="No of Arrays" /> 
       <label for="Range" class=label>Speed</label>
       <input class="slider" id="speedofvisual" type="Range" min=1 max=4 step="1" />
     </div>
@@ -43,8 +43,9 @@
 
 <div class="bcontrol">
 <div class="description" id="desc">
+  <div>
  <h3>Complexity</h3>
- <table class="Complexity">
+ <table class="complexity">
    <tr>
      <td>Best Case</td>
      <td id="Best Case"></td>
@@ -58,9 +59,11 @@
      <td id="Worst Case"></td>
    </tr>
  </table>
+ </div>
 </div>
 
 <div class="customarray" id="ca">
+  <div>
   <h3>Enter Array</h3>
     <table id="custominput">
       <tr>
@@ -79,10 +82,12 @@
      <td><input type="number" value="6" class="arr" name="array" id=""></td>
    </tr>
   </table>
+  </div>
+  <div>
   <button class="customarray-btn" onclick="customArray()">Custom Array</button>
+  </div>
 </div>
   <div class="customarray-switch"><span id="openbtn"><</span><span id="closebtn">></span></div>
-
 </div>
 
 <script src="Index.js" type="text/javascript" charset="utf-8"></script>
