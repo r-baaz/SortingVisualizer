@@ -56,4 +56,21 @@ function showComplexity(val1,val2,val3){
   td3.innerText= val3;
 }
 
+let openbtn=document.getElementById("openbtn");
+let custompanel=document.getElementById("ca");
+openbtn.addEventListener("click", ()=>{
+  
+  ca.style="width:515px; padding:2rem;";
+  openbtn.style="visibility:hidden";
+  closebtn.style="visibility:visible;";
+  
+})
+
+let closebtn=document.getElementById("closebtn");
+closebtn.addEventListener("click", ()=>{
+  ca.style="width:0%;";
+  openbtn.style="visibility: visible;";
+  closebtn.style="visibility:hidden;";
+})
+
 window.onload= numberOfArray();

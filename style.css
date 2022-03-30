@@ -119,12 +119,20 @@ input{
 }
 
 .customarray{
-  display:block;
+  display: inline-block;
   margin:0 0 0 auto;
+  border-radius: 15px 0 0 15px;
   overflow:hidden;
+  width:0%;
   background-color:#E69517;
-  padding:2rem;
+  transition: width .5s ease-out;
 }
+
+.customarray *{
+  
+  
+}
+
 .customarray h3{
   margin-left:1rem;
 }
@@ -149,12 +157,20 @@ input{
 .arr{
   width:4rem;
 }
-.openbtn{
+.customarray-switch{
   display:flex;
   justify-content: center;
   align-items: center;
   font-size: 32px;
   background-color: #E69517;
-  width:30px;
+  width:40px;
   margin-left:3px;
+}
+
+#openbtn{
+  position: absolute;
+}
+
+#closebtn{
+  visibility:hidden;
 }
