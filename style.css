@@ -103,6 +103,7 @@ input{
   box-shadow: 0px 0px 1px 1px #161616;
   padding:2em 1em;
 }
+
 .Complexity{
   margin:10px auto;
   font-size: 15px;
@@ -110,6 +111,7 @@ input{
   border:2px solid #989BBE;
   width:12rem;
 }
+
 .Complexity td{
  padding:5px;
 }
@@ -119,27 +121,24 @@ input{
 }
 
 .customarray{
-  display: inline-block;
+ display:inline-block;
   margin:0 0 0 auto;
   border-radius: 15px 0 0 15px;
   overflow:hidden;
   width:0%;
   background-color:#E69517;
-  transition: width .5s ease-out;
+  transition: width .25s ease-out;
+  transition-delay:padding 1s;
 }
 
-.customarray *{
-  
-  
-}
 
 .customarray h3{
-  margin-left:1rem;
+  overflow:hidden;
+  margin:2rem 0 0 2rem;
 }
 
 .customarray-btn{
-  margin-top: 1rem;
-  margin-left: 1rem;
+  margin-left: 2rem;
   color:black;
   background-color:#4FA99A;
   padding:5px;
@@ -149,10 +148,8 @@ input{
 }
 
 #custominput{
-  position: relative;
-  top:0px;
+  margin:0 0 0 2rem;
 }
-
 
 .arr{
   width:4rem;

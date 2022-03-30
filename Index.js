@@ -60,7 +60,7 @@ let openbtn=document.getElementById("openbtn");
 let custompanel=document.getElementById("ca");
 openbtn.addEventListener("click", ()=>{
   
-  ca.style="width:515px; padding:2rem;";
+  ca.style="width:515px; ";
   openbtn.style="visibility:hidden";
   closebtn.style="visibility:visible;";
   
