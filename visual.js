@@ -26,5 +26,7 @@ function Update(cont,height,color)
         cont.style="height:" + height + "px; background-color:" + color + ";";
         if(showvalue===true){
         cont.innerText=height;}
+        setTimeout(log,change_delay, change_delay);
+
     },change_delay+=delay_time);
 }

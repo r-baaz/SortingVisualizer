@@ -40,4 +40,6 @@ function Insertion()
         }
     }
     Update(bar[j-1],bar_size[j-1],"green");//Color update
+        setTimeout(log,change_delay, change_delay);
+
 }

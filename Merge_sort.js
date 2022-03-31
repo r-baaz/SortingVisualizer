@@ -45,6 +45,7 @@ function merge_sort(start,mid,end)
         bar_size[start++]=Arr[t];
         Update(bar[start-1],bar_size[start-1],"green");//Color update
     }
+    
 }
 
 function merge_partition(start,end)
@@ -58,5 +59,9 @@ function merge_partition(start,end)
         merge_partition(mid+1,end);
 
         merge_sort(start,mid,end);
+        
     }
+   
+
+
 }

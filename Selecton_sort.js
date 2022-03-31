@@ -44,5 +44,4 @@ function selection_sort()
         Update(bar[i],bar_size[i],"green");//Color update
     }
     Update(bar[i],bar_size[i],"green");//Color update
-
 }

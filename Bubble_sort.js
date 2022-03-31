@@ -1,9 +1,12 @@
 let Bsort= document.getElementById("BubbleSort");
+let t0=0,t1=0, my
 Bsort.addEventListener("click", bubble_sort);
 function bubble_sort()
 {
   showComplexity("O(n)","O(n²)","O(n²)");
     change_delay=0;
+
+
 
     for(var i=0;i<array_size-1;i++)
     {
@@ -31,4 +34,5 @@ function bubble_sort()
         Update(bar[j],bar_size[j], "green");
     }
     Update(bar[0],bar_size[0], "green");
+   setTimeout(log,change_delay, change_delay);
 }

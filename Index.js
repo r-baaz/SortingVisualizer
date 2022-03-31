@@ -22,6 +22,8 @@ function randomArray(){
     cont.appendChild(bar[i]);
   }
   desc.style="opacity:0";
+  document.querySelector(".log").style="opacity:0;";
+
 }
 
 function customArray(){
@@ -40,6 +42,7 @@ function customArray(){
     cont.appendChild(bar[i]);
   }
     desc.style="opacity:0;";
+    document.querySelector(".log").style="opacity:0;";
     
 }
 
@@ -75,4 +78,16 @@ closebtn.addEventListener("click", ()=>{
   closebtn.style="visibility:hidden;";
 })
 
+
+function log(time){
+    document.querySelector(".log").style="opacity:1;";
+  let et= (time/1000).toString();
+  let ar= et.split(".");
+  let seconds=ar[0];
+  let mseconds=ar[1];
+  document.querySelector("#Atime").innerHTML= seconds+"s "+mseconds+"ms";
+  document.querySelector("#Asize").innerHTML= array_size;
+
+   }
 window.onload= numberOfArray();
+

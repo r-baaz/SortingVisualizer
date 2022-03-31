@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Marvel:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
 :root{
   --ca_clr:rgba(190, 62, 62, 1);
   --comp_clr:rgba(31, 40, 94, 1);
+  --text-prm:rgba(255, 255, 255, 1);
 }
 *{
   box-sizing: border-box;
   margin: 0px;
   padding:0px;
-  color:white;
+  font-family: 'Times New Roman', sans-serif;
 }
 
 body{
@@ -14,7 +17,16 @@ body{
     font-size: 16px;
 }
 .visual-sec{
-  display:block;
+  display:flex;
+  justify-content: center;
+}
+
+.left-container{
+  text-align: center;
+  width:20%;
+}
+.right-container{
+  width:20%;
 }
 #container{
   /* background-color: white; */
@@ -53,7 +65,7 @@ li{
   cursor: pointer;
   /* font-size: 1px; */
   /* background-color: #8B97D5; */
-  color:#FFF9F9;
+  color: var(--text-prm);
 }
 
 li:hover{
@@ -62,7 +74,7 @@ li:hover{
 
 .label{
   background-color:#1c4866 ;
-  color:white;
+  color:var(--text-prm);
 }
 
 input{
@@ -95,7 +107,7 @@ input{
   min-height: 3rem;
   max-height: 3rem;
   padding: 1rem 0 1rem 0;
-  color:white;
+  color:black;
   transition: 0.2s all ease;
 
 }
@@ -103,6 +115,7 @@ input{
 .description{
 
   background-color:var(--comp_clr);
+  color: var(--text-prm);
   border-radius:0 15px 15px 0;
   box-shadow: 0px 0px 1px 1px #161616;
   opacity:0;
@@ -143,6 +156,7 @@ input{
   overflow: hidden;
   max-width: 70%;
   background-color:var(--ca_clr);
+  color:var(--text-prm);
   transition: width .5s ease-in-out;
 }
 
@@ -154,8 +168,8 @@ input{
 }
 
 .customarray-btn{
-  color:black;
   background-color:#4FA99A;
+  color:var(--text-prm);
   padding:10px;
   margin-top:20px;
   border: 2px solid black;
@@ -188,8 +202,46 @@ input{
 
 #openbtn{
   position: absolute;
+  color:var(--text-prm);
 }
 
 #closebtn{
   visibility:hidden;
+  color:var(--text-prm);
+}
+
+.log{
+  background-color: rgba(255, 254, 257, 1);
+  margin:50% 10px 10px 10px;
+  border-radius: 10px;
+  opacity:0;
+  transition: opacity 0.2s ease-out;
+}
+
+.log h2{
+  position:relative;
+  padding:0;
+  margin:2px 0 10px 0;
+}
+.log h2::before{
+  content: "";
+  position: absolute;
+  width:90%;
+  height:10%;
+  bottom:0px;
+  right:5%;
+  z-index: 1;
+  background-color:black ;
+ 
+
+  
+}
+.log *{
+  padding:5px 0 5px 0;
+}
+
+.log *:nth-child(even){
+  background-color: rgba(200, 200, 202, 1);
+  border-radius: 5px;
+  
 }
