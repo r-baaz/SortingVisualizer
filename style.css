@@ -22,10 +22,10 @@ body{
 }
 
 .left-container{
-  text-align: center;
   width:20%;
 }
 .right-container{
+  text-align: center;
   width:20%;
 }
 #container{
@@ -52,22 +52,24 @@ header{
 
 .Mynav ul{
   float:left;
-  margin: 15px;
+  margin: 10px;
   
   /* flex-direction: right; */
 }
 
 .Mynav ul li{
-  display:inline;
+  display:inline-block;
   list-style: none;
-  text-align: center;
+}
+.Mynav ul li a{
+  display:block;
+  text-decoration:none;
   padding:none;
-    list-style: none;
-    border-radius:10px;
-    margin: 0;
-    padding:.4em; 
-    cursor: pointer;
-    color: var(--text-prm);
+  border-radius:10px;
+  margin: 0;
+  padding:.4em; 
+  cursor: pointer;
+  color: var(--text-prm);
   
 }
 .controls{
@@ -95,7 +97,6 @@ li:hover{
 }
 
 .label{
-  background-color:#1c4866 ;
   color:var(--text-prm);
 }
 
@@ -111,7 +112,6 @@ input{
 
 .bar{
   text-align: center;
-
   width:2rem;
   background-color: turquoise;
   margin: 2px;
@@ -138,7 +138,7 @@ input{
 
   background-color:var(--comp_clr);
   color: var(--text-prm);
-  border-radius:0 15px 15px 0;
+  border-radius:0 8px 8px 0;
   box-shadow: 0px 0px 1px 1px #161616;
   opacity:0;
   max-width:25%;
@@ -173,13 +173,13 @@ input{
  justify-content: space-evenly;
  align-items: center;
   margin:0 0 0 auto;
-  border-radius: 15px 0 0 15px;
+  border-radius: 8px 0 0 8px;
   width:0%;
   overflow: hidden;
   max-width: 70%;
   background-color:var(--ca_clr);
   color:var(--text-prm);
-  transition: width .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 
@@ -232,16 +232,17 @@ input{
 .log{
   background-color: rgba(255, 254, 257, 1);
   margin:50% 10px 10px 10px;
-  border-radius: 10px;
+  border-radius: 8px;
   opacity:0;
-  transition: opacity 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .log h2{
+  position:relative;
   padding:0;
   position:relative;
   margin:2px 0 10px 0;
-  z-index: -1;
+  z-index: 1; 
 }
 .log h2::before{
   content: "";
@@ -251,10 +252,9 @@ input{
   bottom:0px;
   right:5%;
   background-color:black ;
- 
 
-  
 }
+
 .log *{
   padding:5px 0 5px 0;
 }
@@ -273,24 +273,38 @@ input{
  .Mynav ul{
    position: fixed;
    height: 100%;
-   width: 40%;
+   width: 60%;
    margin: 0;
    left: -100%;
    padding: 50px 0;
    background-color: rgb(48, 40, 40);
    transition: all .25s ease;
-   z-index:2;
-
+   z-index: 2;
  }
 
  .Mynav .side{
    padding: 50px 0;
    margin: 50px;
  }
- .Mynav ul li{
-   display: block;
-   text-align: left;
-   padding: .5em 2em;
 
+.Mynav ul li{
+  display:block;
+}
+ .Mynav ul li a{
+ display:block;
+ margin: 0;
+ padding:1em 1em;
+
+ }
+ #numberofarray input{
+   max:60;
+ }
+ 
+ .sidemenu-close{
+   font-size: 3rem;
+   position: absolute;
+   top:0%;
+   right:10%;
+   color:var(--text-prm);
  }
 }

@@ -80,7 +80,7 @@ closebtn.addEventListener("click", ()=>{
 
 
 function log(time){
-    document.querySelector(".log").style="opacity:1;";
+  document.querySelector(".log").style="opacity:1;";
   let et= (time/1000).toString();
   let ar= et.split(".");
   let seconds=ar[0];
