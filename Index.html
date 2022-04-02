@@ -10,24 +10,25 @@
   
 <body>
   <!-- <div class="navbar"> -->
-    <header>
+  <header>
     <nav class="Mynav">
-     <ul>
-     <!-- <button class="btn" id="newarray" type="text">New Array</button>
-     <button class="btn" onclick="bubble_sort()" type="text">Bubble sort</button>
-     <button class="btn" onclick="selection_sort()" type="text">Selection Sort</button>
-     <button class="btn" onclick="Insertion()" type="text">Insertion Sort</button>
-     <button class="btn" onclick="quick_sort()" type="text">Insertion Sort</button></button>
-     <button class="btn" onclick="Merge()" type="text">Merge Sort</button>
-     <button class="btn" onclick="Heap()" type="text">Heap Sort</button> -->
-      <li class="btn" id="random">Random</li>
-      <li class="btn" id="BubbleSort">Bubble sort</li>
-      <li class="btn" id="SelectionSort">Selection Sort</li>
-      <li class="btn" id="InsertionSort">Insertion Sort</li>
-      <li class="btn" id="QuickSort">Quick Sort</li>
-      <li class="btn" id="MergeSort">Merge Sort</li>
-      <li class="btn" id="HeapSort">Heap Sort</li>
+    <div class="menu" id="menubtn">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div>
+     <ul id="sidemenu">
+      <li><a class="btn" id="random">Random</a></li>
+      <li><a class="btn" id="BubbleSort">Bubble sort </a></li>
+      <li><a class="btn" id="SelectionSort">Selection Sort</a></li>
+      <li><a class="btn" id="InsertionSort">Insertion Sort</a></li>
+      <li><a class="btn" id="QuickSort">Quick Sort</a></li>
+      <li><a class="btn" id="MergeSort">Merge Sort</a></li>
+      <li><a class="btn" id="HeapSort">Heap Sort</a></li>
+    
     </ul>
+  </div>
     <div class="controls">
       <label for="input" class=label>Size</label>
       <input class="noa" id="numberofarray" type="Range" value="15" min="10" max="100" step=1 oninput="numberOfArray()" name="no of arrays" placeholder="No of Arrays" /> 
@@ -35,7 +36,7 @@
       <input class="slider" id="speedofvisual" type="Range" min=1 max=4 step="1" />
     </div>
     </nav>
-  </header>
+    </header>
   <!-- </div> -->
   <section class="visual-sec">
   <div class="left-container">
@@ -110,7 +111,7 @@
 </div>
 
 <script src="Index.js" type="text/javascript" charset="utf-8"></script>
-<script src="cards.js" type="text/javascript" charset="utf-8"></script>
+<script src="menu.js" type="text/javascript" charset="utf-8"></script>
 <script src="visual.js" type="text/javascript" charset="utf-8"></script>
 <script src="Bubble_sort.js" type="text/javascript" charset="utf-8"></script>
 <script src="Selecton_sort.js" type="text/javascript" charset="utf-8"></script>

@@ -37,36 +37,58 @@ body{
   margin:1rem auto;
 
 }
+
+header{
+  height: 50px;
+}
 .Mynav{
-   display: flex;
-   justify-content: space-between;
-    align-items: center;
-    background-color: #1c4866;
+    position: fixed;
+    width: 100%;
     border-radius: 0.5rem;
+    background-color:#1c4866;
+    height:50px;
+
 }
 
 .Mynav ul{
-  display:flex;
-  align-items: center;
+  float:left;
+  margin: 15px;
+  
   /* flex-direction: right; */
 }
 
-.controls{
- display:flex;
-  align-items: center;
-}
-
-
-li{
+.Mynav ul li{
+  display:inline;
   list-style: none;
-  border-radius:10px;
-  margin: .7em;
-  padding:.4em;
-  cursor: pointer;
-  /* font-size: 1px; */
-  /* background-color: #8B97D5; */
-  color: var(--text-prm);
+  text-align: center;
+  padding:none;
+    list-style: none;
+    border-radius:10px;
+    margin: 0;
+    padding:.4em; 
+    cursor: pointer;
+    color: var(--text-prm);
+  
 }
+.controls{
+  display: flex;
+  align-items: center;
+  float:right;
+  margin: 2px;
+}
+
+.menu div{
+  height: 3px;
+  width: 35px;
+  margin: 5px;
+  background-color: #03061B;
+}
+.menu {
+  display: none;
+  float: left;
+  margin: 10px;
+}  
+
 
 li:hover{
   background-color: #15354b;
@@ -183,9 +205,6 @@ input{
   box-shadow: 0 0 25px #5F67BF;
 }
 
-#custominput{
-  
-}
 
 .arr{
   width:4rem;
@@ -219,9 +238,10 @@ input{
 }
 
 .log h2{
-  position:relative;
   padding:0;
+  position:relative;
   margin:2px 0 10px 0;
+  z-index: -1;
 }
 .log h2::before{
   content: "";
@@ -230,7 +250,6 @@ input{
   height:10%;
   bottom:0px;
   right:5%;
-  z-index: 1;
   background-color:black ;
  
 
@@ -244,4 +263,34 @@ input{
   background-color: rgba(200, 200, 202, 1);
   border-radius: 5px;
   
+}
+
+@media only screen and (max-width:600px){
+  
+  .menu{
+    display: block;
+  }
+ .Mynav ul{
+   position: fixed;
+   height: 100%;
+   width: 40%;
+   margin: 0;
+   left: -100%;
+   padding: 50px 0;
+   background-color: rgb(48, 40, 40);
+   transition: all .25s ease;
+   z-index:2;
+
+ }
+
+ .Mynav .side{
+   padding: 50px 0;
+   margin: 50px;
+ }
+ .Mynav ul li{
+   display: block;
+   text-align: left;
+   padding: .5em 2em;
+
+ }
 }
