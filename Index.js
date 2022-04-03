@@ -6,7 +6,7 @@ let showlog=true;
 let ca=document.getElementById("ca");
 let desc= document.getElementById("desc");
 let cont= document.getElementById("container");
-let rightcont=document.getElementById("right-container");
+let logcont=document.querySelectorAll(".log");
 
 let genarray= document.getElementById("random");
 genarray.addEventListener("click",randomArray);
@@ -85,17 +85,23 @@ closebtn.addEventListener("click", ()=>{
 
 
 function log(time){
-  rightcont.style="opacity:1;";
+  logcont[0].style="opacity:1;";
+  logcont[1].style="opacity:1";
   let et= (time/1000).toString();
   let ar= et.split(".");
   let seconds=ar[0];
   let mseconds=ar[1];
-  document.querySelector("#Atime").innerHTML= seconds+"s "+mseconds+"ms";
-  document.querySelector("#Asize").innerHTML= array_size;
+  let Atime=document.querySelectorAll(".Atime");
+  let Asize=document.querySelectorAll(".Asize");
+  for(i=0;i<2;i++){
+    Atime[i].innerHTML= seconds+"s "+mseconds+"ms";
+    Asize[i].innerHTML= array_size;
+  }
   }
 
 function logOpacity(){
-  rightcont.style="opacity:0";
+  logcont[0].style="opacity:0";
+  logcont[1].style="opacity:0";
   showlog=true;
 }
 // function log(time){
