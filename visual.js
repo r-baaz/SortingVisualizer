@@ -1,5 +1,5 @@
 let speed=1000;
-let delay_time=10000/(Math.floor(array_size/10)*speed);
+let delay_time=8000/(Math.floor(array_size/10)*speed);
 let change_delay=0;
 let visspeed= document.getElementById("speedofvisual");
 visspeed.addEventListener("input", speedOfVisual);
@@ -17,7 +17,7 @@ function speedOfVisual()
         case 4: speed=10000;
                 break;
     }
-    delay_time=10000/(Math.floor(array_size/10)*speed);
+    delay_time=8000/(Math.floor(array_size/10)*speed);
 }
 function Update(cont,height,color)
 {
@@ -26,7 +26,11 @@ function Update(cont,height,color)
         cont.style="height:" + height + "px; background-color:" + color + ";";
         if(showvalue===true){
         cont.innerText=height;}
-        setTimeout(log,change_delay, change_delay);
+        
+        if(showlog===true){
+        setTimeout(log,change_delay, change_delay);}
+        showlog=false;
 
     },change_delay+=delay_time);
+              // log(change_delay);
 }

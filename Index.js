@@ -2,9 +2,11 @@ let array_size=50;
 let bar_size=[];
 let bar=[];
 let showvalue=false;
+let showlog=true;
 let ca=document.getElementById("ca");
 let desc= document.getElementById("desc");
 let cont= document.getElementById("container");
+let rightcont=document.getElementById("right-container");
 
 let genarray= document.getElementById("random");
 genarray.addEventListener("click",randomArray);
@@ -14,6 +16,7 @@ function randomArray(){
     cont.removeChild(cont.firstChild);
   }
     showvalue=false;
+    showlog=true;
   for (var i = 0; i <array_size; i++) {
     bar_size[i] = Math.floor(Math.random()*300)+1;
     bar[i] = document.createElement("div");
@@ -22,9 +25,11 @@ function randomArray(){
     cont.appendChild(bar[i]);
   }
   desc.style="opacity:0";
-  document.querySelector(".log").style="opacity:0;";
+  logOpacity();
 
 }
+
+
 
 function customArray(){
   let inp=document.querySelectorAll(".arr");
@@ -32,6 +37,7 @@ function customArray(){
     cont.removeChild(cont.firstChild);
    }
     showvalue=true;
+    showlog=true;
   bar_size=[];
   array_size=10;
   for( var i=0;i<10;i++){
@@ -42,8 +48,7 @@ function customArray(){
     cont.appendChild(bar[i]);
   }
     desc.style="opacity:0;";
-    document.querySelector(".log").style="opacity:0;";
-    
+    logOpacity();
 }
 
 function numberOfArray(){
@@ -80,14 +85,32 @@ closebtn.addEventListener("click", ()=>{
 
 
 function log(time){
-  document.querySelector(".log").style="opacity:1;";
+  rightcont.style="opacity:1;";
   let et= (time/1000).toString();
   let ar= et.split(".");
   let seconds=ar[0];
   let mseconds=ar[1];
   document.querySelector("#Atime").innerHTML= seconds+"s "+mseconds+"ms";
   document.querySelector("#Asize").innerHTML= array_size;
+  }
 
-   }
+function logOpacity(){
+  rightcont.style="opacity:0";
+  showlog=true;
+}
+// function log(time){
+//   rightcont.style="opacity:1;";
+//   let et= parseFloat(time/1000).toString();
+//   let ar= et.split(".");
+//   let seconds=ar[0];
+//   let mseconds=ar[1];
+//   setTimeout(()=>{
+//   document.querySelector("#Atime").innerHTML= seconds+"s "+mseconds+"ms";
+//   document.querySelector("#Asize").innerHTML= array_size;
+
+//   },time);}
+
+
+
 window.onload= numberOfArray();
 

@@ -1,5 +1,7 @@
 let Hsort= document.getElementById("HeapSort");
 Hsort.addEventListener("click", Heap);
+Hsort.addEventListener("click", logOpacity);
+
 function Heap()
 {
     showComplexity("O(n × log n)","O(n × log n)","O(n × log n)");
@@ -10,18 +12,18 @@ function Heap()
 
 function swap(i,j)
 {
-    Update(bar[i],bar_size[i],"red");//Color update
-    Update(bar[j],bar_size[j],"red");//Color update
+    Update(bar[i],bar_size[i],"red"); 
+    Update(bar[j],bar_size[j],"red"); 
 
     var temp=bar_size[i];
     bar_size[i]=bar_size[j];
     bar_size[j]=temp;
 
-    Update(bar[i],bar_size[i],"red");//Height update
-    Update(bar[j],bar_size[j],"red");//Height update
+    Update(bar[i],bar_size[i],"red"); 
+    Update(bar[j],bar_size[j],"red"); 
 
-    Update(bar[i],bar_size[i],"blue");//Color update
-    Update(bar[j],bar_size[j],"blue");//Color update
+    Update(bar[i],bar_size[i],"blue"); 
+    Update(bar[j],bar_size[j],"blue"); 
 }
 
 function max_heapify(n,i)
@@ -34,24 +36,24 @@ function max_heapify(n,i)
     {
         if(largest!=i)
         {
-            Update(bar[largest],bar_size[largest],"blue");//Color update
+            Update(bar[largest],bar_size[largest],"blue"); 
         }
 
         largest=l;
 
-        Update(bar[largest],bar_size[largest],"red");//Color update
+        Update(bar[largest],bar_size[largest],"red"); 
     }
 
     if(r<n && bar_size[r]>bar_size[largest])
     {
         if(largest!=i)
         {
-            Update(bar[largest],bar_size[largest],"blue");//Color update
+            Update(bar[largest],bar_size[largest],"blue"); 
         }
 
         largest=r;
 
-        Update(bar[largest],bar_size[largest],"red");//Color update
+        Update(bar[largest],bar_size[largest],"red"); 
     }
 
     if(largest!=i)
@@ -72,14 +74,14 @@ function heap_sort()
     for(var i=array_size-1;i>0;i--)
     {
         swap(0,i);
-        Update(bar[i],bar_size[i],"green");//Color update
-        Update(bar[i],bar_size[i],"yellow");//Color update
+        Update(bar[i],bar_size[i],"green"); 
+        Update(bar[i],bar_size[i],"yellow"); 
 
         max_heapify(i,0);
 
-        Update(bar[i],bar_size[i],"blue");//Color update
-        Update(bar[i],bar_size[i],"green");//Color update
+        Update(bar[i],bar_size[i],"blue"); 
+        Update(bar[i],bar_size[i],"green"); 
     }
-    Update(bar[i],bar_size[i],"green");//Color update
+    Update(bar[i],bar_size[i],"green"); 
 
 }
