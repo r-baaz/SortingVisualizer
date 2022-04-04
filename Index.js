@@ -24,7 +24,7 @@ function randomArray(){
     bar[i].style="height:"+bar_size[i]+"px;";
     cont.appendChild(bar[i]);
   }
-  desc.style="left:-100%";
+  desc.style="opacity:0";
   logOpacity();
 
 }
@@ -47,7 +47,7 @@ function customArray(){
     bar[i].innerText=inp[i].value;
     cont.appendChild(bar[i]);
   }
-    desc.style="left:-100%;";
+    desc.style="opacity:0";
     logOpacity();
 }
 
@@ -57,7 +57,7 @@ function numberOfArray(){
 }
 
 function showComplexity(val1,val2,val3){
-  desc.style="left:0;";
+  desc.style="opacity:1;";
   let td1= document.getElementById("Best Case");
   let td2= document.getElementById("Average Case");
   let td3= document.getElementById("Worst Case");

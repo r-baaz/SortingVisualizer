@@ -142,10 +142,10 @@ input{
   color: var(--text-prm);
   border-radius:0 8px 8px 0;
   box-shadow: 0px 0px 1px 1px #161616;
-  left:-100%;
-  max-width:35%;
-  transition:opacity 0.25s ease-in-out;
-  z-index: -1;
+  opacity:0;
+  max-width:100%;
+  transition:all 0.25s ease-in-out;
+
 }
 
 .complexity{
@@ -276,7 +276,7 @@ input{
   border-radius: 5px;
   
 }
-.logMobile{
+.log2{
   display:none;
 }
 
@@ -336,7 +336,9 @@ input{
   display:block;
   margin:0 3px;
   min-width:60%;
+  opacity:0;
   border-radius: 5px;
+  z-index: -1;
  }
  
  .logMobile{
@@ -344,6 +346,9 @@ input{
    justify-content: space-between;
  }
  
+ .log2{
+   display:block;
+ }
  .log{
    text-align: center;
    margin:0;
