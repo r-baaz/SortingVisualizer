@@ -41,6 +41,7 @@ body{
 header{
   height: 50px;
 }
+
 .Mynav{
     position: fixed;
     width: 100%;
@@ -59,6 +60,7 @@ header{
   display:inline-block;
   list-style: none;
 }
+
 .Mynav ul li a{
   display:block;
   text-decoration:none;
@@ -68,7 +70,6 @@ header{
   padding:.4em; 
   cursor: pointer;
   color: var(--text-prm);
-  
 }
 
 .sidemenu-close{
@@ -95,8 +96,8 @@ header{
 }  
 
 
-li:hover{
-  background-color: #15354b;
+.active ,li:hover{
+  background-color: #647B8B;
 }
 
 .label{
@@ -144,7 +145,7 @@ input{
   box-shadow: 0px 0px 1px 1px #161616;
   opacity:0;
   max-width:100%;
-  transition:all 0.25s ease-in-out;
+  transition:all 0.25s ease-in-out; 
 
 }
 
@@ -284,6 +285,7 @@ input{
   
   .menu{
     display: block;
+    transition: all .25s ease;
   }
  .Mynav ul{
    position: fixed;
@@ -292,7 +294,8 @@ input{
    margin: 0;
    left: -100%;
    padding: 50px 0;
-   background-color: rgb(48, 40, 40);
+   border-right:1px d gray;
+   background-color: rgba(48, 40, 40,0.6);
    transition: all .25s ease;
    z-index: 99999;
  }
@@ -304,13 +307,15 @@ input{
 
 .Mynav ul li{
   display:block;
+  margin:0 10px;
+  border-radius: 10px;
 }
  .Mynav ul li a{
  display:block;
  margin: 0;
  padding:1em 1em;
-
  }
+ 
  #numberofarray input{
    max:60;
  }
@@ -323,6 +328,7 @@ input{
    right:10%;
    color:var(--text-prm);
  }
+ 
  
  #right-container,#left-container{
   display:none;

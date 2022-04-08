@@ -18,7 +18,7 @@
       <div></div>
     </div>
      <ul id="sidemenu">
-      <li><a href="#" class="btn" id="random">Random</a></li>
+      <li class="active"><a href="#" class="btn" id="random">Random</a></li>
       <li><a href="#" class="btn" id="BubbleSort">Bubble sort </a></li>
       <li><a href="#" class="btn" id="SelectionSort">Selection Sort</a></li>
       <li><a href="#" class="btn" id="InsertionSort">Insertion Sort</a></li>
@@ -100,19 +100,19 @@
   <h3>Enter Array</h3>
     <table id="custominput">
       <tr>
-  <td><input type="number" value="11" class="arr" name="array" id=""></td>
-  <td><input type="number" value="9" class="arr" name="array" id=""></td>  
-  <td><input type="number" value="87" class="arr" name="array" id=""></td>
-  <td><input type="number" value="7" class="arr" name="array" id=""></td>  
-  <td><input type="number" value="61" class="arr" name="array" id=""></td>
+  <td><input type="number" value="11" class="arr" name="array" onblur="this.value = minmax(this.value, 1, 999)" id=""></td>
+  <td><input type="number" value="9" class="arr" name="array" onblur="this.value = minmax(this.value, 1, 999)" id=""></td>  
+  <td><input type="number" value="87" class="arr" name="array" onblur="this.value = minmax(this.value, 1, 999)" id=""></td>
+  <td><input type="number" value="7" class="arr" name="array" onblur="this.value = minmax(this.value, 1, 999)" id=""></td>  
+  <td><input type="number" value="61" class="arr" name="array" onblur="this.value = minmax(this.value, 1, 999)" id=""></td>
   </tr>
   
   <tr>
-     <td><input type="number" value="99" class="arr" name="array" id=""></td>
-     <td><input type="number" value="91" class="arr" name="array" id=""></td>
-     <td><input type="number" value="78" class="arr" name="array" id=""></td>
-     <td><input type="number" value="77" class="arr" name="array" id=""></td>
-     <td><input type="number" value="690" class="arr" name="array" id=""></td>
+     <td><input type="number" value="99" class="arr" name="array" onblur="this.value = minmax(this.value, 1, 999)" id=""></td>
+     <td><input type="number" value="91" class="arr" name="array" onblur="this.value = minmax(this.value, 1, 999)" id=""></td>
+     <td><input type="number" value="78" class="arr" name="array" onblur="this.value = minmax(this.value, 1, 999)" id=""></td>
+     <td><input type="number" value="77" class="arr" name="array" onblur="this.value = minmax(this.value, 1, 999)" id=""></td>
+     <td><input type="number" value="690" class="arr" name="array" onblur="this.value = minmax(this.value, 1, 999)" id=""></td>
    </tr>
   </table>
   </div>

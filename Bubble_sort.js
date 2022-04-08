@@ -1,5 +1,4 @@
 let Bsort= document.getElementById("BubbleSort");
-let t0=0,t1=0, my
 Bsort.addEventListener("click", bubble_sort);
 Bsort.addEventListener("click", logOpacity);
 

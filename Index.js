@@ -29,26 +29,40 @@ function randomArray(){
 
 }
 
+  let result=[];
 
 
 function customArray(){
+
   let inp=document.querySelectorAll(".arr");
+ 
    while(cont.hasChildNodes()){
     cont.removeChild(cont.firstChild);
    }
     showvalue=true;
     showlog=true;
   bar_size=[];
+  bar=[];
   array_size=10;
-  for( var i=0;i<10;i++){
+  for( var i=0;i<array_size;i++){
     bar_size[i]=parseFloat(inp[i].value);
     bar[i]=document.createElement("div");
     bar[i].classList.add("block");
     bar[i].innerText=inp[i].value;
     cont.appendChild(bar[i]);
+  
   }
     desc.style="opacity:0";
     logOpacity();
+}
+
+function minmax(value, min, max) 
+{
+    if(parseInt(value) < min || isNaN(parseInt(value))) 
+        return min; 
+    else if(parseInt(value) > max) 
+        return max; 
+    else return value;
 }
 
 function numberOfArray(){
@@ -115,6 +129,17 @@ function logOpacity(){
 //   document.querySelector("#Asize").innerHTML= array_size;
 
 //   },time);}
+
+// code for active class
+let btns = document.querySelectorAll("ul>li, button.customarray-btn")
+
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    let current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace("active", "");
+    this.className += " active";
+  });
+}
 
 
 
