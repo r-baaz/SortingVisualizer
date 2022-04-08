@@ -131,6 +131,8 @@ input{
   max-width:5rem;
   min-height: 3rem;
   max-height: 3rem;
+  border:1.5px solid white;
+  border-radius: 20px;
   padding: 1rem 0 1rem 0;
   color:black;
   transition: 0.2s all ease;
@@ -154,6 +156,7 @@ input{
   border-collapse: collapse;
   border:2px solid #989BBE;
   overflow:hidden;
+  font-size:14px;
 }
 
 .description h3{
@@ -274,7 +277,7 @@ input{
 
 .log *:nth-child(even){
   background-color: rgba(200, 200, 202, 1);
-  border-radius: 5px;
+  border-radius: 3px;
   
 }
 .log2{
@@ -400,6 +403,7 @@ input{
   min-height:2rem;
   max-height:2rem;
   color:black;
+  border-radius:10px;
   padding-bottom: 2rem;
   transition: 0.2s all ease;
   text-align: center;
